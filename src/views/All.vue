@@ -10,7 +10,11 @@
         </router-link>
       </h2>
       <ul class="all-questions__answers">
-        <li v-for="answer in question.answers" :key="answer">{{ answer }}</li>
+        <li v-for="answer in question.answers" :key="answer">
+          <a v-if="question.link" :href="question.link" target="_blank" rel="noopener"
+             class="all-questions__answer-link">{{ answer }}</a>
+          <span v-else>{{ answer }}</span>
+        </li>
       </ul>
     </div>
   </div>
@@ -48,6 +52,10 @@
     &:hover, &:focus {
       padding-left: 0.5rem;
     }
+  }
+
+  &__answer-link {
+    color: blue;
   }
 
   &__answers {
