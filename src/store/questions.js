@@ -66,7 +66,7 @@ export default [
     new Question('Who is one of your state\'s U.S. Senators now?', ['Answers will vary, check here.'], 'https://www.senate.gov/senators/senators-contact.htm'),
     new Question('The House of Representatives has how many voting members?', ['four hundred thirty-five (435)']),
     new Question('We elect a U.S. Representative for how many years?', ['two (2)']),
-    new Question('Name your U.S. Representative.', ['Answers will var,.cCheck here.'], 'https://www.house.gov/representatives/find-your-representative'),
+    new Question('Name your U.S. Representative.', ['Answers will vary, Check here.'], 'https://www.house.gov/representatives/find-your-representative'),
     new Question('Who does a U.S. Senator represent?', ['all people of the state']),
     new Question('Why do some states have more Representatives than other states?', [
         '(because of) the state\'s population',

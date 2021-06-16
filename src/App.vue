@@ -1,8 +1,14 @@
 <template>
   <div id="app">
-    <div id="nav">
-      <button @click="goToRandomQuestion()">Random Question</button>
-    </div>
+    <header class="header">
+      <div class="header__title">U.S. Naturalization Test Preparation</div>
+      <nav class="nav">
+        <button class="nav__button" @click="goToAllQuestions">
+          All Questions
+        </button>
+        <button class="nav__button" @click="goToRandomQuestion" ref="randomQuestionButton">Random Question</button>
+      </nav>
+    </header>
     <router-view :key="this.$route.fullPath"/>
   </div>
 </template>
@@ -10,7 +16,13 @@
 <script>
 export default {
   methods: {
+    goToAllQuestions() {
+      if (this.$route.name !== 'All') {
+        this.$router.push('/all')
+      }
+    },
     goToRandomQuestion() {
+      this.$refs.randomQuestionButton.blur();
       this.$router.push('/' + this.getRandomQuestionIndex().toString())
     },
     getRandomQuestionIndex() {
@@ -26,24 +38,54 @@ export default {
 </script>
 
 <style lang="scss">
-#app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
+html {
+  background-color: #eee;
 }
 
-#nav {
-  padding: 30px;
+#app {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 2rem;
+  font-family: 'Merriweather', serif;
+}
 
-  a {
+.header {
+  margin-top: 1rem;
+
+  &__title {
+    text-align: center;
+    font-size: 1.25rem;
     font-weight: bold;
-    color: #2c3e50;
+    color: darkred;
+    margin-bottom: 1rem;
+  }
+}
 
-    &.router-link-exact-active {
-      color: #42b983;
+.nav {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-gap: 1rem;
+  margin-bottom: 2rem;
+
+  &__button {
+    display: inline-block;
+    text-align: center;
+    padding: 1rem;
+    box-shadow: 0 0.25rem 1rem rgba(0, 0, 0, 0.125);
+    cursor: pointer;
+    background-color: white;
+    border: 0;
+    transition: background-color 0.25s ease;
+
+    &:hover, &:focus {
+      background-color: mediumspringgreen;
     }
+  }
+
+  &.green {
+    background-color: mediumspringgreen;
   }
 }
 </style>
