@@ -289,35 +289,90 @@ export default [
     ]),
     new Question('What major event happened on September 11, 2001, in the United States?', ['Terrorists attacked the United States.']),
     new Question('Name one American Indian tribe in the United States.', [
-        'Cherokee' +
-        'Navajo' +
-        'Sioux' +
-        'Chippewa' +
-        'Choctaw' +
-        'Pueblo' +
-        'Apache' +
-        'Iroquois' +
-        'Creek' +
-        'Blackfeet' +
-        'Seminole' +
-        'Cheyenne' +
-        'Arawak' +
-        'Shawnee' +
-        'Mohegan' +
-        'Huron' +
-        'Oneida' +
-        'Lakota' +
-        'Crow' +
-        'Teton' +
-        'Hopi' +
+        'Cherokee',
+        'Navajo',
+        'Sioux',
+        'Chippewa',
+        'Choctaw',
+        'Pueblo',
+        'Apache',
+        'Iroquois',
+        'Creek',
+        'Blackfeet',
+        'Seminole',
+        'Cheyenne',
+        'Arawak',
+        'Shawnee',
+        'Mohegan',
+        'Huron',
+        'Oneida',
+        'Lakota',
+        'Crow',
+        'Teton',
+        'Hopi',
         'Inuit'
     ]),
     new Question('Name one of the two longest rivers in the United States.', [
         'Missouri (River)',
         'Mississippi (River)'
     ]),
-    new Question('What ocean is on the West Cost of the United States?', ['']),
-    new Question('', ['']),
-    new Question('', ['']),
-    new Question('', ['']),
+    new Question('What ocean is on the West Cost of the United States?', ['Pacific (Ocean)']),
+    new Question('What ocean is on the East Coast of the United States?', ['Atlantic (Ocean)']),
+    new Question('Name one U.S. territory.', [
+        'Puerto Rico',
+        'U.S. Virgin Islands',
+        'American Samoa',
+        'Northern Mariana Islands',
+        'Guam'
+    ]),
+    new Question('Name one state that borders Canada.', [
+        'Maine',
+        'New Hampshire ',
+        'Vermont',
+        'New York',
+        'Pennsylvania ',
+        'Ohio',
+        'Michigan',
+        'Minnesota',
+        'North Dakota',
+        'Montana',
+        'Idaho',
+        'Washington',
+        'Alaska'
+    ]),
+    new Question('Name one state that borders Mexico.', [
+        'California',
+        'Arizona',
+        'New Mexico',
+        'Texas'
+    ]),
+    new Question('What is the capital of the United States?', ['Washington, D.C.']),
+    new Question('Where is the Statue of Liberty?', [
+        'New York (Harbor)',
+        'Liberty Island',
+        '[Also acceptable are New Jersey, near New York City, and on the Hudson (River).]'
+    ]),
+    new Question('Why does the flag have 13 stripes?', [
+        'because there were 13 original colonies',
+        'because the stripes represent the original colonies'
+    ]),
+    new Question('Why does the flag have 50 stars?', [
+        'because there is one star for each state',
+        'because each star represents a state',
+        'because there are 50 states'
+    ]),
+    new Question('What is the name of the national anthem?', ['The Star-Spangled Banner']),
+    new Question('When do we celebrate Independence Day?', ['July 4']),
+    new Question('Name two national U.S. holidays.', [
+        'New Year\'s Day',
+        'Martin Luther King, Jr. Day',
+        'Presidents\' Day',
+        'Memorial Day',
+        'Independence Day',
+        'Labor Day',
+        'Columbus Day',
+        'Veterans Day',
+        'Thanksgiving ',
+        'Christmas'
+    ]),
 ]
