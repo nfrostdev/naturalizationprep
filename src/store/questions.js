@@ -270,7 +270,53 @@ export default [
         'fought for women\'s rights',
         'fought for civil rights'
     ]),
-    new Question('', ['']),
+    new Question('Name one war fought by the United States in the 1900s.', [
+        'World War I',
+        'World War II',
+        'Korean War',
+        'Vietnam War',
+        '(Persian) Gulf War'
+    ]),
+    new Question('Who was the President during World War I?', ['(Woodrow) Wilson']),
+    new Question('Who was President during the Great Depression and World War II?', ['(Franklin) Roosevelt']),
+    new Question('Who did the United States fight in World War II?', ['Japan, Germany, and Italy']),
+    new Question('Before he was President, Eisenhower was a general. What was was he in?', ['World War II']),
+    new Question('During the Cold War, what was the main concern of the United States.', ['Communism']),
+    new Question('What movement tried to end racial discrimination?', ['civil rights (movement)']),
+    new Question('What did Martin Luther Kind, Jr. do?', [
+        'fought for civil rights',
+        'worked for equality for all Americans'
+    ]),
+    new Question('What major event happened on September 11, 2001, in the United States?', ['Terrorists attacked the United States.']),
+    new Question('Name one American Indian tribe in the United States.', [
+        'Cherokee' +
+        'Navajo' +
+        'Sioux' +
+        'Chippewa' +
+        'Choctaw' +
+        'Pueblo' +
+        'Apache' +
+        'Iroquois' +
+        'Creek' +
+        'Blackfeet' +
+        'Seminole' +
+        'Cheyenne' +
+        'Arawak' +
+        'Shawnee' +
+        'Mohegan' +
+        'Huron' +
+        'Oneida' +
+        'Lakota' +
+        'Crow' +
+        'Teton' +
+        'Hopi' +
+        'Inuit'
+    ]),
+    new Question('Name one of the two longest rivers in the United States.', [
+        'Missouri (River)',
+        'Mississippi (River)'
+    ]),
+    new Question('What ocean is on the West Cost of the United States?', ['']),
     new Question('', ['']),
     new Question('', ['']),
     new Question('', ['']),
