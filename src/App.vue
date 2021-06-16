@@ -1,7 +1,7 @@
 <template>
   <div id="app">
     <div id="nav">
-      <button @click="getRandomQuestion()">Get random question number: {{ }}</button>
+      <button @click="getRandomQuestion()">Random Question</button>
     </div>
     <router-view/>
   </div>
