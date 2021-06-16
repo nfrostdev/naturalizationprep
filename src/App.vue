@@ -1,18 +1,26 @@
 <template>
   <div id="app">
     <div id="nav">
-      <button @click="getRandomQuestion()">Random Question</button>
+      <button @click="goToRandomQuestion()">Random Question</button>
     </div>
-    <router-view/>
+    <router-view :key="this.$route.fullPath"/>
   </div>
 </template>
 
 <script>
 export default {
   methods: {
-    getRandomQuestion() {
-      return this.$store.state.questions[Math.round(Math.random() * this.$store.state.questions.length)];
+    goToRandomQuestion() {
+      this.$router.push('/' + this.getRandomQuestionIndex().toString())
     },
+    getRandomQuestionIndex() {
+      const index = Math.round(Math.random() * this.$store.state.questions.length)
+      if (this.$route.params.index && index === parseInt(this.$route.params.index)) {
+        this.getRandomQuestionIndex()
+      } else {
+        return index;
+      }
+    }
   },
 }
 </script>
