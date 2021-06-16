@@ -1,4 +1,4 @@
-import Question from '../classes/Question'
+import Question from '../classes/Question.js'
 
 export default [
     new Question('What is the supreme law of the land?', ['the Constitution']),
@@ -60,6 +60,8 @@ export default [
         'Senate and House (of Representative)',
         '(U.S. or national legislature)'
     ]),
+    new Question('What are the two parts of the U.S. Congress?', ['the Senate and the House (of Representatives)']),
+    new Question('How many U.S. Senators are there?', ['one hundred (100)']),
     new Question('We elect a U.S. Senator for how many years?', ['six (6)']),
     new Question('Who is one of your state\'s U.S. Senators now?', ['Answers will vary, check here.'], 'https://www.senate.gov/senators/senators-contact.htm'),
     new Question('The House of Representatives has how many voting members?', ['four hundred thirty-five (435)']),

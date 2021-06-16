@@ -1,12 +1,21 @@
 <template>
   <div id="app">
     <div id="nav">
-      <router-link to="/">Home</router-link> |
-      <router-link to="/about">About</router-link>
+      <button @click="getRandomQuestion()">Get random question number: {{ }}</button>
     </div>
     <router-view/>
   </div>
 </template>
+
+<script>
+export default {
+  methods: {
+    getRandomQuestion() {
+      return this.$store.state.questions[Math.round(Math.random() * this.$store.state.questions.length)];
+    },
+  },
+}
+</script>
 
 <style lang="scss">
 #app {
