@@ -18,7 +18,7 @@ export default {
   methods: {
     goToAllQuestions() {
       if (this.$route.name !== 'All') {
-        this.$router.push('/all')
+        this.$router.push('/')
       }
     },
     goToRandomQuestion() {
