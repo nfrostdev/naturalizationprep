@@ -105,7 +105,7 @@ export default [
         'reviews laws',
         'explains laws',
         'resolves disputes (disagreements)',
-        'decides of a law goes against the Constitution'
+        'decides if a law goes against the Constitution'
     ]),
     new Question('What is the highest court in the United States?', ['the Supreme Court']),
     new Question('How many justices are on the Supreme Court?', ['Answers will vary, check here.'], 'https://www.supremecourt.gov/about/justices.aspx'),
