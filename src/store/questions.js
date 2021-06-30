@@ -282,7 +282,7 @@ export default [
     new Question('Who was the President during World War I?', ['(Woodrow) Wilson']),
     new Question('Who was President during the Great Depression and World War II?', ['(Franklin) Roosevelt']),
     new Question('Who did the United States fight in World War II?', ['Japan, Germany, and Italy']),
-    new Question('Before he was President, Eisenhower was a general. What was was he in?', ['World War II']),
+    new Question('Before he was President, Eisenhower was a general. What war was he in?', ['World War II']),
     new Question('During the Cold War, what was the main concern of the United States.', ['Communism']),
     new Question('What movement tried to end racial discrimination?', ['civil rights (movement)']),
     new Question('What did Martin Luther Kind, Jr. do?', [
