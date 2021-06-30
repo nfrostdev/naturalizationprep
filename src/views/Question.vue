@@ -21,7 +21,7 @@ export default {
     }
   },
   mounted() {
-    this.question = this.$store.state.questions[this.$route.params.index];
+    this.question = this.$store.state.questions[parseInt(this.$route.params.index) - 1];
   }
 }
 </script>
